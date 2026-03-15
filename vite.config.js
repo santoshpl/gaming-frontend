@@ -7,11 +7,11 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://gaming-backend-h0fo.onrender.com',
+        target: 'https://gaming-backend-h0fo.onrender.com/api',
         changeOrigin: true,
       },
       '/socket.io': {
-        target: 'https://gaming-backend-h0fo.onrender.com',
+        target: 'https://gaming-backend-h0fo.onrender.com/api',
         ws: true,
       },
     },
