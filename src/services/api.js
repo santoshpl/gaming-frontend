@@ -1,4 +1,4 @@
-const API_BASE = "/api";
+const API_BASE = "https://gaming-backend-h0fo.onrender.com/api";
 
 export const fetchLiveMatches = async () => {
   const res = await fetch(`${API_BASE}/matches/live`);
